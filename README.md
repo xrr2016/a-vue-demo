@@ -1,6 +1,8 @@
 # a-vue-demo
 
 > A Vue.js project
+> 使用了v-router v-resource element-ui
+> 豆瓣电影和CNode社区的api
 
 ## Build Setup
 
@@ -15,4 +17,4 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+written by [xrr2016](https://github.com/xrr2016)
