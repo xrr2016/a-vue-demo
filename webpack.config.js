@@ -23,6 +23,14 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test:/\.css$/,
+        loader:'style!css'
+      },
+      {
+        test:/\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+        loader:'file'
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file',
         options: {
