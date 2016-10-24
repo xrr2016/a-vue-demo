@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" alt="VUE" />
+    <img src="./assets/logo.png" alt="VUE"/>
     <h1>{{msg}}</h1>
     <ul>
-      <li><router-link to='/hello'>Hello</router-link></li>
-      <li><router-link to='/world'>World</router-link></li>
+      <li><router-link to='/hello'>CNode社区</router-link></li>
+      <li><router-link to='/world'>豆瓣电影</router-link></li>
     </ul>
     <router-view class="view"></router-view>
   </div>

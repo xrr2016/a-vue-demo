@@ -1,14 +1,15 @@
 <template lang="html">
   <div class="" id="world">
-    <h2>Another component from world </h2>
-    <p>
-      我是第二个页面
-    </p>
-    <ul>
-      <li v-for='article of articles' class="articleT">
-        {{article.title}}
-      </li>
-    </ul>
+    <el-card class="clearfix">
+      <div class="clearfix" slot='header'>
+        <h1 style="line-height:36px;color:#20a0ff;">豆瓣电影排行榜</h1>
+      </div>
+      <ul>
+        <li v-for='article of articles' class="articleT text item">
+          {{article.title}}
+        </li>
+      </ul>
+    </el-card>
     <a href="https://github.com/xrr2016">written by {{author}}</a>
   </div>
 </template>
