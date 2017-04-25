@@ -1,20 +1,13 @@
-# a-vue-demo
+# Learn Redux
 
-> A Vue.js project
-> 使用了v-router v-resource element-ui
-> 豆瓣电影和CNode社区的api
+A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.
 
-## Build Setup
+## Running
 
-``` bash
-# install dependencies
-npm install
+First `npm install` to grab all the necessary dependencies. 
 
-# serve with hot reload at localhost:8080
-npm run dev
+Then run `npm start` and open <localhost:7770> in your browser.
 
-# build for production with minification
-npm run build
-```
+## Production Build
 
-written by [xrr2016](https://github.com/xrr2016)
+Run `npm build` to create a distro folder and a bundle.js file.
