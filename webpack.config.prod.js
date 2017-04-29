@@ -4,8 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    
-    './client/reduxstagram'
+    './client/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
