@@ -14,7 +14,7 @@ render(
     <Router history={history}>
       <Route path='/' component={App}>
         <IndexRoute component={PhotoGrid} />
-        <Route path='/photo/:photoId' component={Photo} />
+        <Route path='/post/:postId' component={Photo} />
       </Route>
     </Router>
   </Provider>,
