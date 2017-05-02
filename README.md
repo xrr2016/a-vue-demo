@@ -4,6 +4,7 @@ A simple React + Redux implementation. This will be turned into a free video ser
 
 ![index](./images/index.png)
 ![redux](./images/redux.gif)
+![support](./images/support.gif)
 
 [videos](http://www.bilibili.com/video/av8629586)
 
