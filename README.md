@@ -2,6 +2,11 @@
 
 A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.
 
+![index](./images/index.png)
+![redux](./images/redux.gif)
+
+[videos](http://www.bilibili.com/video/av8629586)
+
 ## Running
 
 First `npm install` to grab all the necessary dependencies. 
