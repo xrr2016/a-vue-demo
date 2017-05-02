@@ -6,7 +6,7 @@ class Comments extends Component {
     super(props)
     this.state = {
       author: '',
-      text: ''
+      comment: ''
     }
     this.handleAuthorChange = this.handleAuthorChange.bind(this)
     this.handleTextChange = this.handleTextChange.bind(this)
@@ -18,15 +18,15 @@ class Comments extends Component {
   }
 
   handleTextChange (event) {
-    this.setState({ text: event.target.value })
+    this.setState({ comment: event.target.value })
   }
 
   handleSubmit (event) {
     event.preventDefault()
     const { postId } = this.props.params
-    const { author, text } = this.state
-    if (author && text) {
-      this.props.addComment(postId, author, text)
+    const { author, comment } = this.state
+    if (author.length > 0 && comment.length > 0) {
+      this.props.addComment(postId, author, comment)
     }
     this.setState({
       author: '',
@@ -35,10 +35,19 @@ class Comments extends Component {
   }
 
   render () {
-    const { comments } = this.props
+    const { comments, removeComment } = this.props
+    const { postId } = this.props.params
     return (
       <div className='comments'>
-        {comments.map((comment, index) => <Comment {...comment} key={index} />)}
+        {comments.map((comment, index) => (
+          <Comment
+            index={index}
+            postId={postId}
+            {...comment}
+            key={index}
+            removeComment={removeComment}
+          />
+        ))}
         <form
           className='comment-form'
           onSubmit={this.handleSubmit}
